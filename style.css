@@ -1,0 +1,484 @@
+@font-face {
+  font-family: avenir;
+  src: url("Avenir-Roman.ttf")
+}
+
+body {
+  margin: 0;
+  font-family: avenir;
+  background-image: url("https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/983E6296D47BCC9377706461AEC0E36D460AE11A922F49FA4ACEDF0A0D164C3D/scale?width=2880&aspectRatio=1.78&format=jpeg");
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.gradient-left {
+  height: 91vh;
+  width: 20%;
+  background-image: linear-gradient(to right, rgba(18, 25, 74, 0.8), transparent);
+  position: absolute;
+  z-index: 0;
+}
+
+.gradient-bottom {
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(to top, rgba(18, 25, 74, 0.8), transparent);
+  bottom: 0px;
+  position: fixed;
+  z-index: 0;
+}
+
+.gradient-right {
+  height: 101vh;
+  width: 10%;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
+  right: 0px;
+  position: absolute;
+  z-index: 0;
+}
+
+nav {
+  padding: 8px;
+  background-color: black;
+  display: flex;
+}
+
+.logo {
+  margin-left: 1.1%;
+  width: 80px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  display: flex;
+  margin-left: 8%;
+}
+
+li a {
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1px;
+  display: flex;
+  position: relative;
+}
+
+li img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  top: 21px;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.snowdrop {
+  position: relative;
+  width: 22%;
+  top: 60px;
+  left: 5%;
+}
+
+
+.tv-14 {
+  height: 20px;
+  margin: 75px 0px 0px 5%;
+  z-index: 1;
+  position: relative;
+}
+
+.cc {
+  height: 20px;
+  margin: 75px 0px 0px 5px;
+  z-index: 1;
+  position: relative;
+}
+
+.genre {
+  color: white;
+  display: flex;
+  margin-top: -25px;
+  margin-left: 11%;
+  font-size: 12px;
+  position: absolute;
+  z-index: 1;
+}
+
+.description {
+  font-size: 12px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  margin-left: 5%;
+  margin-top: -1px;
+}
+
+.play {
+  letter-spacing: 1.1px;
+  padding: 10px 25px 10px 25px;
+  background: rgb(249, 249, 249);
+  border: none;
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+  margin-left: 5%;
+  margin-top: 30px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.play:hover {
+  background: rgb(176, 176, 176);
+}
+
+.watch {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+  margin-left: 15%;
+  margin-top: 40px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.plus {
+  width: 15px;
+  filter: invert(1);
+  margin-top: 15%;
+}
+
+.group {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.people {
+  text-align: center;
+  margin-left: -22%;
+}
+
+.box {
+  color: white;
+  font-size: 18px;
+  width: 60%;
+  height: 30px;
+  z-index: 1;
+  position: relative;
+  margin-left: 5%;
+}
+
+.tabs {
+  color: #bababa;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  margin-top: 3%;
+  margin-left: 3%;
+  width: 30%;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+  padding-right: 62%;
+  border-bottom: solid;
+  border-width: thin;
+}
+
+.tabs li {
+  margin-left: -15%;
+  cursor: pointer;
+}
+
+.tabs li:hover {
+  color: white;
+}
+
+.tabs .active {
+  color: white;
+}
+
+#episodes {
+  font-size: 10px;
+  color: #cfcfcf;
+  position: relative;
+  z-index: 1;
+  margin-left: 5.5%;
+}
+
+#suggested {
+  font-size: 10px;
+  color: #cfcfcf;
+  position: relative;
+  z-index: 1;
+  margin-left: 5.5%;
+}
+
+#details {
+  font-size: 12px;
+  color: #cfcfcf;
+  position: relative;
+  z-index: 1;
+  margin-left: 5.5%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ep1 {
+  width: 18%;
+  height: 150px;
+  margin-left: -5%;
+  background-image: url("ep1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ep1:hover {
+  border: 3px solid white;
+  background-image: url("dramacool.png");
+  background-size: 100% 100%;
+}
+
+.ep2 {
+  width: 18%;
+  height: 150px;
+  background-image: url("ep2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ep2:hover {
+  border: 3px solid white;
+  background-image: url("kisskh.png");
+  background-size: 100% 100%;
+}
+
+.ep3 {
+  width: 18%;
+  height: 150px;
+  background-image: url("ep3.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ep3:hover {
+  border: 3px solid white;
+  background-image: url("myflixer.webp");
+  background-size: 80%;
+}
+
+.ep4 {
+  width: 18%;
+  height: 150px;
+  background-image: url("ep4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ep4:hover {
+  border: 3px solid white;
+  background-image: url("olevodbg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.ep5 {
+  width: 18%;
+  height: 150px;
+  background-image: url("ep5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -45px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ep5:hover {
+  border: 3px solid white;
+  background-image: url("http://wasabi-files.lbstatic.nu/files/users/large/9675944_a.jpg?1630304638");
+  background-size: cover;
+  background-position: center -25px;
+}
+
+.dramacool {
+  width: 40%;
+  height: 450px;
+  background-image: url("home-background.png");
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+  margin-top: -35%;
+  margin-left: 31%;
+  border-radius: 10px;
+  border: 2px solid white;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.popup .dramacool {
+  visibility: visible;
+}
+
+.info {
+  font-size: 20px;
+  margin-left: 2%;
+}
+
+.link {
+  width: 90%;
+  height: 30px;
+  background: red;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 5px;
+  text-align: center;
+  pointer-events: auto;
+}
+
+.info a {
+  text-decoration: none;
+  color: #cfcfcf;
+}
+
+.link:hover {
+  color: black;
+}
+
+.kisskh {
+  width: 40%;
+  height: 450px;
+  background-image: url("home-background.png");
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+  margin-top: -35%;
+  margin-left: 10%;
+  border-radius: 10px;
+  border: 2px solid white;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.popup .kisskh {
+  visibility: visible;
+}
+
+.myflixer {
+  width: 40%;
+  height: 450px;
+  background-image: url("home-background.png");
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+  margin-top: -35%;
+  margin-left: -11%;
+  border-radius: 10px;
+  border: 2px solid white;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.popup .myflixer {
+  visibility: visible;
+}
+
+.olevod {
+  width: 40%;
+  height: 450px;
+  background-image: url("home-background.png");
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+  margin-top: -35%;
+  margin-left: -32%;
+  border-radius: 10px;
+  border: 2px solid white;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.popup .olevod {
+  visibility: visible;
+}
+
+.kissasian {
+  width: 40%;
+  height: 450px;
+  background-image: url("home-background.png");
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+  margin-top: -35%;
+  margin-left: -53%;
+  border-radius: 10px;
+  border: 2px solid white;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.popup .kissasian {
+  visibility: visible;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Disney+</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js" defer></script>
+  <nav>
+    <img class="logo" src="logo.svg">
+    <ul>
+      <li><img src="home-icon.svg"><a href="">HOME</a></li>
+      <li><img src="search-icon.svg"><a href="">SEARCH</a></li>
+      <li><img src="watchlist-icon.svg"><a href="">WATCHLIST</a></li>
+      <li><img src="original-icon.svg"><a href="">ORIGINALS</a></li>
+      <li><img src="movie-icon.svg"><a href="">MOVIES</a></li>
+      <li><img src="series-icon.svg"><a href="">SERIES</a></li>
+    </ul>
+  </nav>
+  
+  <div>
+    <div class="gradient-left"></div>
+    <div class="gradient-bottom"></div>
+    <div class="gradient-right"></div>
+  </div>
+  
+  <img class="snowdrop" src="snowdrop-title.png">
+  
+  <div>
+    <img class="tv-14" src="tv-14.png">
+    <img class="cc" src="disneycc.png">
+    <p class="genre">2021 • 1 Season</p>
+    <p class="description">Romance, Soap Opera / Melodrama</p>
+  </div>
+  
+  <div>
+    <a href= "https://youtu.be/6CD_ndTXqSQ" target="_blank">
+      <button class="play">
+        <img src="play-icon-black.png">
+        <span>PLAY</span>
+      </button>
+    </a>
+    <button class="watch">
+      <img class="plus" src="plus.png">
+    </button>
+    <button class="group">
+      <img class="people" src="group-icon.png">
+    </button>
+  </div>
+  
+  <section class="box">
+    <p>In this enduring love story set against the backdrop of Seoul in 1987, Yeong-ro, a female university student, treats a bloodied Soo-ho, a student from a prestigious university, who finds respite in her dormitory.</p>
+  </section>
+  
+  <ul class="tabs">
+    <li data-tab-target="#episodes">EPISODES</li>
+    <li data-tab-target="#suggested">SUGGESTED</li>
+    <li data-tab-target="#details">DETAILS</li>
+  </ul>
+
+  <div>
+    <div id="episodes" data-tab-content class="active">
+      <h1>Season 1</h1>
+      <div class="container">
+        
+        <div class="ep1" onclick="windowFunction(this)">
+          <div class="dramacool">
+            <div class="info">
+              <h2 style="text-align: center; margin-left: -2%">Dramacool</h2>
+              <p>Subtitle: English</p>
+              <p>All 16 episodes available.</p>
+              <p>Multiple servers.</p>
+              <p>Pop-up ads.</p>
+              <p>Free Download</p>
+              <a href="https://www.dramacool9.co/snowdrop-2021/" target="_blank">
+                <div class="link">
+                  <p>Click here to direct to Dramacool</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ep2" onclick="windowFunction(this)">
+          <div class="kisskh">
+            <div class="info">
+              <h2 style="text-align: center; margin-left: -2%">kisskh</h2>
+              <p>Subtitle: English</p>
+              <p>All 16 episodes available.</p>
+              <p>Single server.</p>
+              <p>No Pop-up ads.</p>
+              <p>Free Download.</p>
+              <a href="https://kisskh.me/Drama/Snowdrop?id=1106" target="_blank">
+                <div class="link">
+                  <p>Click here to direct to kisskh</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+          
+        <div class="ep3" onclick="windowFunction(this)">
+          <div class="myflixer">
+            <div class="info">
+              <h2 style="text-align: center; margin-left: -2%">MyFlixer</h2>
+              <p>Subtitle: Chinese - Hong Kong/Simplified/Traditional, Danish, Dutch, English, Finnish, French, German, Italian, Japanese, Korean, Norwegian, Portuguese, Spanish, Swedish</p>
+              <p>All 16 episodes available.</p>
+              <p>Multiple servers.</p>
+              <p>Pop-up ads.</p>
+              <a href="https://myflixer.to/tv/snowdrop-73108" target=_blank>
+                <div class="link">
+                  <p>Click here to direct to MyFlixer</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ep4" onclick="windowFunction(this)">
+          <div class="olevod">
+            <div class="info">
+              <h2 style="text-align: center; margin-left: -2%">Olevod</h2>
+              <p>Subtitle: Chinese</p>
+              <p>All 16 episodes available.</p>
+              <p>Single server.</p>
+              <p>Pop-up ads.</p>
+              <p>No download.</p>
+              <a href="https://www.olevod.com/index.php/vod/detail/id/32305.html" target="_blank">
+                <div class="link">
+                  <p>Click here to direct to Olevod</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ep5" onclick="windowFunction(this)">
+          <div class="kissasian">
+            <div class="info">
+              <h2 style="text-align: center; margin-left: -2%">KissAsian</h2>
+              <p>Subtitle: English</p>
+              <p>All 16 episodes available.</p>
+              <p>Multiple servers.</p>
+              <p>Pop-up ads.</p>
+              <p>No download.</p>
+              <a href="https://kissasian.la/snowdrop-2021/" target="_blank">
+                <div class="link">
+                  <p>Click here to direct to KissAsian</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="suggested" data-tab-content>
+      <h1>You May Also Like</h1>
+    </div>
+    <div id="details" data-tab-content>
+      <h1>Snowdrop</h1>
+      <p style="font-size: 20px; margin-right: 5%;">In 1987, bloodied man Soo-ho jumps into a women's university dormitory in Seoul. Yeong-ro, a female student who fell in love with him at a group blind date, tends to his wounds as the dormitory is ensnared in intense surveillance. As Soo-ho's secrets unravel, he must eventually face the conflict between his heart to Yeong-ro and responsibility to his comrades, as well as to his sibling who awaits him in his home country. What will be of their fate?</p>
+    </div>
+  </div>
+</body>
+
+</html>
